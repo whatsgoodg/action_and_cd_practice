@@ -41,6 +41,8 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
           logout: true
+    - name: Docker Push
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/istory
     # # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # # the publishing section of your build.gradle
     # - name: Publish to GitHub Packages
