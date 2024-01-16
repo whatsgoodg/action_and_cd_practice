@@ -7,7 +7,7 @@ on:
     branches: ["main"] 
 jobs:
   build: # vm을 제공해준다. 해당 vm에 레포의 커밋을 다운받는다. 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04 # latest 최신 버전을 가져와서 좆됐다.
 
     steps:  
     - name: 1. CheckOut_Source
