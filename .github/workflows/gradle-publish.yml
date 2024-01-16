@@ -27,7 +27,7 @@ jobs:
         mysql version: '8.0'
         mysql database: 'istory'
         mysql root password: ${{ secrets.MYSQL_ROOT_PASSWORD }}
-        mysql user:  ${{ secrets.MYSQL_USER }}
+        mysql username:  ${{ secrets.MYSQL_USER }}
         mysql password:  ${{ secrets.MYSQL_USER_PASSWORD }}
     - name: 4. Build with Gradle
       uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
